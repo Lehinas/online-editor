@@ -20,6 +20,9 @@ const tasks: ITask[] = [
 	},
 ]
 
+// Здесь используется страница CodeRunner ближе как компонент, вроде плохо но работает)
+// В будущем может поменяю если буду дописывать сию штуку
+
 const TaskPage: FC = () => {
 	const {id} = useParams<{ id: string }>()
 	const task = tasks.find((t) => t.id === Number(id)) as ITask | undefined

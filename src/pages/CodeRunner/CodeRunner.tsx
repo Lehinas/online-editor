@@ -77,7 +77,6 @@ const CodeRunner: FC<CodeRunnerProps> = ({type}) => {
 				}),
 			})
 			const data: IApiResponse = await response.json()
-			console.log(data)
 			if (data.ran) {
 				setOutput(data.output || "No output")
 				setStatus(Status.finished)
@@ -103,7 +102,6 @@ const CodeRunner: FC<CodeRunnerProps> = ({type}) => {
 			setCode(value)
 		}
 	}
-
 
 	const clearConsole = () => {
 		setOutput("")
