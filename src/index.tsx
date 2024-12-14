@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client"
 import "./index.css"
 import App from "./App"
 import {createBrowserRouter, RouterProvider} from "react-router"
-import * as path from "path"
 import TaskList from "./pages/TaskList/TaskList"
 import TaskPage from "./pages/TaskPage/TaskPage"
 import CodeRunner from "./pages/CodeRunner/CodeRunner"
@@ -19,15 +18,15 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <TaskList />
+				element: <TaskList/>
 			},
 			{
 				path: "task/:id",
-				element: <TaskPage />
+				element: <TaskPage/>
 			},
 			{
 				path: "/playground",
-				element: <CodeRunner />
+				element: <CodeRunner/>
 			}
 		]
 	}
@@ -35,6 +34,6 @@ const router = createBrowserRouter([
 
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<RouterProvider router={router}/>
 	</React.StrictMode>
 )
