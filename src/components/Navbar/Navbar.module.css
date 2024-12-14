@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #777;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #fff;
+}
+
+.title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #bbb;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+}
+
+.username {
+    font-size: 1rem;
+    color: #aaa;
+}

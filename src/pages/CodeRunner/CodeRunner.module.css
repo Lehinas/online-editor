@@ -1,0 +1,103 @@
+.CodeRunner {
+    display: flex;
+    flex: 1 0;
+    padding: 20px;
+}
+.CodeRunner_column{
+    padding: 0;
+}
+.column{
+    flex-direction: column;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.settings{
+    min-height: 51px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.languageSelector {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #ddd;
+}
+
+.runButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.blocks {
+    display: flex;
+    gap: 20px;
+    flex: 1 0;
+}
+
+
+.outputHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.clearButton {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: left;
+}
+.status{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.finished, .error, .running {
+    color: white;
+    padding: 5px 8px;
+    border-radius: 16px;
+}
+
+.finished {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.running {
+    background-color: #66b2ff;
+}
